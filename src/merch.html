@@ -68,101 +68,183 @@
         </nav>
         <main>
             <div
-            class="
-                bg-header
-                border-t border-black
-                text-white text-4xl p-16
-            "
+                class="bg-header border-t border-black text-white text-4xl p-16"
             >
-            <h1 class="font-header text-center uppercase">Merch store</h1>
-            <div class="text-base mx-auto md:w-6/12 ">
-                <p class="p-2">
-                    Sign up to our newsletter to receive a 10% discount code
-                </p>
-                <form>
-                    <div class="p-2">
-                        <label for="form-name">Name</label>
-                        <input
-                            type="text"
-                            class="block rounded p-1.5 w-full"
-                            id="form-name"
-                            placeholder="Name"
-                        />
-                    </div>
-                    <div class="p-2">
-                        <label for="form-email">Email address</label>
-                        <input
-                            type="email"
-                            class="block rounded p-1.5 w-full"
-                            id="form-email"
-                            placeholder="Enter email"
-                        />
-                    </div>
-                    <div class="p-2">
-                        <label for="form-gender">Gender</label>
-                        <select class="block rounded text-black w-full p-1.5" id="form-gender">
-                            <option>Male</option>
-                            <option>Female</option>
-                            <option>Non-binary/Genderqueer</option>
-                            <option>Other</option>
-                            <option>Prefer not to say</option>
-                        </select>
-                    </div>
-                    <div class="block p-2">
-                        <input
-                            type="checkbox"
-                            id="form-consent"
-                        />
-                        <label
-                            for="form-consent"
-                            >I agree to receive promotional
-                            emails</label
-                        >
-                    </div>
-                    <button type="submit" class="card-button bg-gray-900">
-                        Submit
-                    </button>
-                </form>
-            </div>
-        </div>
-               
-
-                <div class="flex flex-wrap justify-center w-9/12 py-4 px-auto my-24 mx-auto">
-                    <div class="flex flex-col bg-merch-sample bg-contain m-8 w-64 h-64">
-                        <small class="flex uppercase text-white my-8 mx-auto">Precio y producto</small>
-                        <a class="shop-button" href="#">Buy</a>
-                    </div>
-                    <div class="flex flex-col bg-merch-sample bg-contain m-8 w-64 h-64">
-                        <small class="flex uppercase text-white my-8 mx-auto">Precio y producto</small>
-                        <a class="shop-button" href="#">Buy</a>
-                    </div>
-                    <div class="flex flex-col bg-merch-sample bg-contain m-8 w-64 h-64">
-                        <small class="flex uppercase text-white my-8 mx-auto">Precio y producto</small>
-                        <a class="shop-button" href="#">Buy</a>
-                    </div>
-                    <div class="flex flex-col bg-merch-sample bg-contain m-8 w-64 h-64">
-                        <small class="flex uppercase text-white my-8 mx-auto">Precio y producto</small>
-                        <a class="shop-button" href="#">Buy</a>
-                    </div>
-                    <div class="flex flex-col bg-merch-sample bg-contain m-8 w-64 h-64">
-                        <small class="flex uppercase text-white my-8 mx-auto">Precio y producto</small>
-                        <a class="shop-button" href="#">Buy</a>
-                    </div>
-                    <div class="flex flex-col bg-merch-sample bg-contain m-8 w-64 h-64">
-                        <small class="flex uppercase text-white my-8 mx-auto">Precio y producto</small>
-                        <a class="shop-button sold" href="#">Buy</a>
-                    </div>
-                    <div class="flex flex-col bg-merch-sample bg-contain m-8 w-64 h-64">
-                        <small class="flex uppercase text-white my-8 mx-auto">Precio y producto</small>
-                        <a class="shop-button sold" href="#">Buy</a>
-                    </div>
-                    <div class="flex flex-col bg-merch-sample bg-contain m-8 w-64 h-64">
-                        <small class="flex uppercase text-white my-8 mx-auto">Precio y producto</small>
-                        <a class="shop-button sold" href="#">Buy</a>
-                    </div>
+                <h1 class="font-header text-center uppercase">Merch store</h1>
+                <div class="text-base mx-auto md:w-6/12">
+                    <p class="p-2">
+                        Sign up to our newsletter to receive a 10% discount code
+                    </p>
+                    <form>
+                        <div class="p-2">
+                            <label for="form-name">Name</label>
+                            <input
+                                type="text"
+                                class="block rounded p-1.5 w-full"
+                                id="form-name"
+                                placeholder="Name"
+                            />
+                        </div>
+                        <div class="p-2">
+                            <label for="form-email">Email address</label>
+                            <input
+                                type="email"
+                                class="block rounded p-1.5 w-full"
+                                id="form-email"
+                                placeholder="Enter email"
+                            />
+                        </div>
+                        <div class="p-2">
+                            <label for="form-gender">Gender</label>
+                            <select
+                                class="block rounded text-black w-full p-1.5"
+                                id="form-gender"
+                            >
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Non-binary/Genderqueer</option>
+                                <option>Other</option>
+                                <option>Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div class="block p-2">
+                            <input type="checkbox" id="form-consent" />
+                            <label for="form-consent"
+                                >I agree to receive promotional emails</label
+                            >
+                        </div>
+                        <button type="submit" class="card-button bg-gray-900">
+                            Submit
+                        </button>
+                    </form>
                 </div>
-            </main>
-        </div>
+            </div>
+
+            <div
+                class="
+                    flex flex-wrap
+                    justify-center
+                    w-9/12
+                    py-4
+                    px-auto
+                    my-24
+                    mx-auto
+                "
+            >
+                <div
+                    class="
+                        flex flex-col
+                        bg-merch-sample bg-contain
+                        m-8
+                        w-64
+                        h-64
+                    "
+                >
+                    <small class="flex uppercase text-white my-8 mx-auto"
+                        >Precio y producto</small
+                    >
+                    <a class="shop-button" href="#">Buy</a>
+                </div>
+                <div
+                    class="
+                        flex flex-col
+                        bg-merch-sample bg-contain
+                        m-8
+                        w-64
+                        h-64
+                    "
+                >
+                    <small class="flex uppercase text-white my-8 mx-auto"
+                        >Precio y producto</small
+                    >
+                    <a class="shop-button" href="#">Buy</a>
+                </div>
+                <div
+                    class="
+                        flex flex-col
+                        bg-merch-sample bg-contain
+                        m-8
+                        w-64
+                        h-64
+                    "
+                >
+                    <small class="flex uppercase text-white my-8 mx-auto"
+                        >Precio y producto</small
+                    >
+                    <a class="shop-button" href="#">Buy</a>
+                </div>
+                <div
+                    class="
+                        flex flex-col
+                        bg-merch-sample bg-contain
+                        m-8
+                        w-64
+                        h-64
+                    "
+                >
+                    <small class="flex uppercase text-white my-8 mx-auto"
+                        >Precio y producto</small
+                    >
+                    <a class="shop-button" href="#">Buy</a>
+                </div>
+                <div
+                    class="
+                        flex flex-col
+                        bg-merch-sample bg-contain
+                        m-8
+                        w-64
+                        h-64
+                    "
+                >
+                    <small class="flex uppercase text-white my-8 mx-auto"
+                        >Precio y producto</small
+                    >
+                    <a class="shop-button" href="#">Buy</a>
+                </div>
+                <div
+                    class="
+                        flex flex-col
+                        bg-merch-sample bg-contain
+                        m-8
+                        w-64
+                        h-64
+                    "
+                >
+                    <small class="flex uppercase text-white my-8 mx-auto"
+                        >Precio y producto</small
+                    >
+                    <a class="shop-button sold" href="#">Buy</a>
+                </div>
+                <div
+                    class="
+                        flex flex-col
+                        bg-merch-sample bg-contain
+                        m-8
+                        w-64
+                        h-64
+                    "
+                >
+                    <small class="flex uppercase text-white my-8 mx-auto"
+                        >Precio y producto</small
+                    >
+                    <a class="shop-button sold" href="#">Buy</a>
+                </div>
+                <div
+                    class="
+                        flex flex-col
+                        bg-merch-sample bg-contain
+                        m-8
+                        w-64
+                        h-64
+                    "
+                >
+                    <small class="flex uppercase text-white my-8 mx-auto"
+                        >Precio y producto</small
+                    >
+                    <a class="shop-button sold" href="#">Buy</a>
+                </div>
+            </div>
+        </main>
 
         <script src="./assets/scripts/main.js"></script>
     </body>
